@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sheet Music Transposer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/vexflow@3.0.9/build/vexflow.js"></script>
+</head>
+<body>
+  <h1>Sheet Music Transposer</h1>
+
+  <!-- Key selectors -->
+  <div class="controls">
+    <label>
+      From Key:
+      <select id="keyFrom"></select>
+    </label>
+    <label>
+      To Key:
+      <select id="keyTo"></select>
+    </label>
+    <button id="transposeBtn">Transpose</button>
+  </div>
+
+  <!-- Canvases for original and transposed -->
+  <div id="notation"></div>
+  <div id="transposedNotation"></div>
+
+  <!-- Text-based note entry -->
+  <div class="note-text-entry">
+    <input type="text" id="noteText" placeholder="Enter notes e.g. c/4 d/4 e/4" />
+    <button id="loadTextBtn">Load Notes</button>
+  </div>
+
+  <!-- On-screen piano keyboard -->
+  <div id="keyboard" class="keyboard"></div>
+
+  <!-- Note input (example: simple buttons) -->
+  <div class="note-input">
+    <button data-note="c/4">C4</button>
+    <button data-note="d/4">D4</button>
+    <!-- etc… -->
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

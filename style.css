@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .controls, .note-input {
+    margin-bottom: 1rem;
+  }
+  .comment-text-entry, .note-text-entry {
+    margin-bottom: 1rem;
+  }
+  #notation, #transposedNotation {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  button { margin: 0 0.25rem; }
+
+/* Piano keyboard */
+.keyboard {
+  position: relative;
+  margin-bottom: 1rem;
+  height: 100px;
+  user-select: none;
+}
+.white-key {
+  width: 40px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid #000;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.black-key {
+  width: 24px;
+  height: 60px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
